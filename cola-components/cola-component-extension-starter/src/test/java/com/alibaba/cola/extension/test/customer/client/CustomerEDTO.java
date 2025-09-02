@@ -9,7 +9,7 @@ import com.alibaba.cola.extension.test.customer.domain.CustomerType;
  *
  * @author Frank Zhang 2018-01-06 7:30 PM
  */
-public class CustomerDTO extends DTO {
+public class CustomerEDTO extends DTO {
 
     private String companyName;
     private String source;  //advertisement, p4p, RFQ, ATM

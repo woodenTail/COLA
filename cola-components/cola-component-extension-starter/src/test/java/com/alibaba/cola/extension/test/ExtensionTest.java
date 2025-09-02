@@ -4,7 +4,7 @@ import com.alibaba.cola.dto.Response;
 import com.alibaba.cola.extension.BizScenario;
 import com.alibaba.cola.extension.test.customer.client.AddCustomerCmd;
 import com.alibaba.cola.extension.test.customer.client.Constants;
-import com.alibaba.cola.extension.test.customer.client.CustomerDTO;
+import com.alibaba.cola.extension.test.customer.client.CustomerEDTO;
 import com.alibaba.cola.extension.test.customer.client.CustomerServiceI;
 import com.alibaba.cola.extension.test.customer.domain.CustomerType;
 import org.junit.Assert;
@@ -31,7 +31,7 @@ public class ExtensionTest {
     public void testBiz1UseCase1Scenario1AddCustomerSuccess(){
         //1. Prepare
         AddCustomerCmd addCustomerCmd = new AddCustomerCmd();
-        CustomerDTO customerDTO = new CustomerDTO();
+        CustomerEDTO customerDTO = new CustomerEDTO();
         customerDTO.setCompanyName("alibaba");
         customerDTO.setSource(Constants.SOURCE_RFQ);
         customerDTO.setCustomerType(CustomerType.IMPORTANT);
@@ -50,7 +50,7 @@ public class ExtensionTest {
     public void testBiz1UseCase1AddCustomerSuccess(){
         //1. Prepare
         AddCustomerCmd addCustomerCmd = new AddCustomerCmd();
-        CustomerDTO customerDTO = new CustomerDTO();
+        CustomerEDTO customerDTO = new CustomerEDTO();
         customerDTO.setCompanyName("alibaba");
         customerDTO.setSource(Constants.SOURCE_RFQ);
         customerDTO.setCustomerType(CustomerType.IMPORTANT);
@@ -69,7 +69,7 @@ public class ExtensionTest {
     public void testBiz1AddCustomerSuccess(){
         //1. Prepare
         AddCustomerCmd addCustomerCmd = new AddCustomerCmd();
-        CustomerDTO customerDTO = new CustomerDTO();
+        CustomerEDTO customerDTO = new CustomerEDTO();
         customerDTO.setCompanyName("jingdong");
         customerDTO.setSource(Constants.SOURCE_RFQ);
         customerDTO.setCustomerType(CustomerType.IMPORTANT);

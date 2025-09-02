@@ -1,7 +1,6 @@
 package com.alibaba.cola.ruleengine;
 
 import com.alibaba.cola.ruleengine.api.Facts;
-import com.alibaba.cola.ruleengine.api.Rule;
 import com.alibaba.cola.ruleengine.core.AbstractRule;
 import org.junit.Test;
 

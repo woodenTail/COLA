@@ -12,5 +12,5 @@ public class SomeExtensionB implements SomeExtPt {
     public void doSomeThing() {
         System.out.println("SomeExtensionB::doSomething");
     }
-    
+
 }

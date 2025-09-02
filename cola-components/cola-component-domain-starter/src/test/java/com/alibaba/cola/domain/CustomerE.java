@@ -1,7 +1,5 @@
 package com.alibaba.cola.domain;
 
-import com.alibaba.cola.domain.Entity;
-
 import javax.annotation.Resource;
 
 /**
@@ -11,7 +9,7 @@ import javax.annotation.Resource;
  * @date 2020-11-14 2:43 PM
  */
 @Entity
-public class Customer {
+public class CustomerE {
     private String name;
 
     private Integer age;

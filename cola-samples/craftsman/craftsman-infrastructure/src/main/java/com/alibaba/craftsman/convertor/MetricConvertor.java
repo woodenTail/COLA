@@ -10,6 +10,7 @@ import com.alibaba.craftsman.gatewayimpl.database.dataobject.MetricDO;
 public class MetricConvertor{
 
     public static MetricDO toDataObject(MetricItem metricItem){
+
         MetricDO metricDO = new MetricDO();
         metricDO.setUserId(metricItem.getMetricOwner().getUserId());
         metricDO.setMainMetric(metricItem.getSubMetric().getParent().getCode());

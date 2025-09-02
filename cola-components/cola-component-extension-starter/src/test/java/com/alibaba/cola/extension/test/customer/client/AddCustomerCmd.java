@@ -13,7 +13,7 @@ import lombok.Data;
 @Data
 public class AddCustomerCmd extends Command {
 
-    private CustomerDTO customerDTO;
+    private CustomerEDTO customerDTO;
 
     private String biz;
 

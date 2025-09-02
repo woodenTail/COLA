@@ -39,6 +39,7 @@
         )
     </insert>
 
+
     <delete id="delete" parameterType="map">
         UPDATE metric SET is_deleted='y', modifier = #{modifier} WHERE id = #{id} and IS_DELETED = 'n'
     </delete>

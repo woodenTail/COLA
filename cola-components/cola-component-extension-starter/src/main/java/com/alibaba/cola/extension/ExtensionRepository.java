@@ -13,7 +13,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * ExtensionRepository 
+ * ExtensionRepository
  * @author fulan.zjf 2017-11-05
  */
 @Component

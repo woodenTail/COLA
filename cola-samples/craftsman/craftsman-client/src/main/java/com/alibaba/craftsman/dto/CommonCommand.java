@@ -1,7 +1,6 @@
 package com.alibaba.craftsman.dto;
 
 import com.alibaba.cola.dto.Command;
-import lombok.Data;
 
 /**
  * 整个应用通用的Command

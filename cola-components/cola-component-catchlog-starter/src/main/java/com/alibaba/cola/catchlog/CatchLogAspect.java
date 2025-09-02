@@ -26,7 +26,7 @@ public class CatchLogAspect {
     /**
      *  <a href="https://blog.csdn.net/zhengchao1991/article/details/53391244">The syntax of pointcut </a>
      */
-    @Pointcut("@within(CatchAndLog) && execution(public * *(..))")
+    @Pointcut("@within(com.alibaba.cola.catchlog.CatchAndLog) && execution(public * *(..))")
     public void pointcut() {
     }
 

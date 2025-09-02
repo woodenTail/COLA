@@ -15,7 +15,7 @@ public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
 
-        Customer customer = DomainFactory.create(Customer.class);
+        CustomerE customer = DomainFactory.create(CustomerE.class);
 
         System.out.println("Customer purchase power score : " + customer.getPurchasePowerScore());
     }

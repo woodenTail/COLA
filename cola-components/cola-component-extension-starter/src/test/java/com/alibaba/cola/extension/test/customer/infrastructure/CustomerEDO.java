@@ -7,7 +7,7 @@ package com.alibaba.cola.extension.test.customer.infrastructure;
  * @date 2018-01-08 1:45 PM
  */
 
-public class CustomerDO implements java.io.Serializable {
+public class CustomerEDO implements java.io.Serializable {
     private String customerId;
     private String memberId;
     private String globalId;

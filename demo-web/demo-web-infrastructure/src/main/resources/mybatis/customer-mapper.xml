@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.alibaba.demo.customer.CustomerMapper">
+   <resultMap type="com.alibaba.demo.customer.CustomerDO" id="customerMap">
+    <result column="id" jdbcType="INTEGER" property="customerId" />
+    <result column="member_id" jdbcType="INTEGER" property="memberId" />
+    <result column="global_id" jdbcType="INTEGER" property="globalId" />
+    <result column="registered_capital" jdbcType="VARCHAR" property="registeredCapital" />
+    <result column="company_name" jdbcType="VARCHAR" property="companyName" />
+     </resultMap>
+    <sql id="ALL_COLUMNS">
+        id, member_id, global_id,
+      registered_capital, company_name
+    </sql>
+    <select id="getById" resultMap="customerMap">
+        select * from sys_user where id = #{id}
+    </select>
+
+
+
+    <insert id="save" parameterType="com.alibaba.demo.customer.CustomerDO">
+    insert into customer
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+
+      <if test="memberId != null">
+        member_id,
+      </if>
+      <if test="globalId != null">
+        global_id,
+      </if>
+      <if test="registeredCapital != null">
+        registered_capital,
+      </if>
+      <if test="companyName != null">
+        company_name,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+  <if test="memberId != null">
+        #{memberId,jdbcType=INTEGER},
+      </if>
+      <if test="globalId != null">
+        #{globalId,jdbcType=INTEGER},
+      </if>
+      <if test="registeredCapital != null">
+        #{registeredCapital,jdbcType=VARCHAR},
+      </if>
+      <if test="companyName != null">
+        #{companyName,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+
+</mapper>

@@ -18,7 +18,7 @@ import java.util.Map;
  * @author Frank Zhang
  * @date 2020-06-18 7:55 PM
  */
-@Component
+//@Component
 public class ExtensionBootstrap implements ApplicationContextAware {
 
     @Resource

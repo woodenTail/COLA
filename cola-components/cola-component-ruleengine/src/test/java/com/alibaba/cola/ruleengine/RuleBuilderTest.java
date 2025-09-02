@@ -3,7 +3,10 @@ package com.alibaba.cola.ruleengine;
 import com.alibaba.cola.ruleengine.api.Facts;
 import com.alibaba.cola.ruleengine.api.Rule;
 import com.alibaba.cola.ruleengine.api.RuleEngine;
-import com.alibaba.cola.ruleengine.core.*;
+import com.alibaba.cola.ruleengine.core.AllRules;
+import com.alibaba.cola.ruleengine.core.AnyRules;
+import com.alibaba.cola.ruleengine.core.DefaultRuleEngine;
+import com.alibaba.cola.ruleengine.core.RuleBuilder;
 import org.junit.Test;
 
 public class RuleBuilderTest {

@@ -3,7 +3,7 @@ package com.alibaba.cola.extension.test.customer.app;
 import com.alibaba.cola.dto.Response;
 import com.alibaba.cola.dto.SingleResponse;
 import com.alibaba.cola.extension.test.customer.client.AddCustomerCmd;
-import com.alibaba.cola.extension.test.customer.client.CustomerDTO;
+import com.alibaba.cola.extension.test.customer.client.CustomerEDTO;
 import com.alibaba.cola.extension.test.customer.client.CustomerServiceI;
 import com.alibaba.cola.extension.test.customer.client.GetOneCustomerQry;
 import org.springframework.stereotype.Service;
@@ -31,7 +31,7 @@ public class CustomerServiceImpl implements CustomerServiceI {
     }
 
     @Override
-    public SingleResponse<CustomerDTO> getCustomer(GetOneCustomerQry getOneCustomerQry) {
+    public SingleResponse<CustomerEDTO> getCustomer(GetOneCustomerQry getOneCustomerQry) {
         return getOneCustomerQryExe.execute(getOneCustomerQry);
     }
 }
